@@ -278,6 +278,7 @@ function drawBackGrounds() {
 
 // クルマの描画
 function drawCar() {
+  // TypeError がここで出るのは376行目の　updateCar() で game.car.x がない可能性あり
   ctx.drawImage(game.image.car, game.car.x - game.car.width / 2, game.car.y - game.car.height / 2);
   updateCar();
 }
